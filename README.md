@@ -78,7 +78,7 @@ pred = torch.sigmoid(feats @ w + b)
 print(f'Predicted p(bad): {pred.item():.4f}')  # Predicted p(bad): 0.9386
 ```
 
-<img src="Figures/QuickQualMEME_Hist.jpeg" width="750">
+<img src="Figures/QuickQualMEME_Hist.jpeg" width="500">
 
 ## Acknowledgements
 
