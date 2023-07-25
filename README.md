@@ -5,7 +5,7 @@
 QuickQual is a state-of-the-art method for retinal image quality scoring, using only an off-the-shelf pretrained DL
 model (DenseNet121) and a sklearn SVM as classifier. It can be used easily with very few lines of code, making it very lightweight and convenient to use.
 
-![QuickQualOverview.png](Figures\QuickQualOverview.png)
+![QuickQualOverview.png](Figures/QuickQualOverview.png)
 
 
 ### Results for EyeQ test set
@@ -78,10 +78,11 @@ pred = torch.sigmoid(feats @ w + b)
 print(f'Predicted p(bad): {pred.item():.4f}')  # Predicted p(bad): 0.9386
 ```
 
-![QuickQualMEME_Hist.jpeg](Figures\QuickQualMEME_Hist.jpeg)
+<img src="Figures/QuickQualMEME_Hist.jpeg" width="750">
 
 ## Acknowledgements
 
 We thank Huazhu Fu and colleagues for releasing the EyeQ dataset and MCFNet code and results. This is an amazing
 contribution to the field and without their work, QuickQual would not have been possible. Check out their
 repo: https://github.com/HzFu/EyeQ
+
