@@ -40,9 +40,10 @@ with torch.no_grad():
 pred = clf.predict_proba(features)  # order of class probabilities: Good, Usable, Bad
 print(''.join([f'{p:.4f} ' for p in pred[0]]))  # p(Good): 0.0001 p(Usable): 0.0114 p(Bad): 0.9885 
 ```
+The SVM can be downloaded from the releases page of this Github. [[LINK](https://github.com/justinengelmann/QuickQual/releases/tag/1.0)] / [[DIRECT FILE LINK](https://github.com/justinengelmann/QuickQual/releases/download/1.0/quickqual_dn121_512.pkl)]
 
 Note: The pytorch image library (timm) can be replaced with torchvision, as the densenet121 model is also available
-there. See the [noteboook](QuickQual_inference_example.ipynb) for more details.
+there. See the [noteboook](QuickQual_inference_example.ipynb) for more details. Input images are assumed to be cropped to square without large black borders as seen in the figures and their resolution should be 512x512 or higher.
 
 ## QuickQual-MEME
 
